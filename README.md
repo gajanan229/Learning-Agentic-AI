@@ -2,7 +2,7 @@
 
 This repository documents my journey learning Agentic AI and building intelligent applications using Large Language Models (LLMs). The focus is on practical implementations using modern frameworks and understanding how AI agents can be designed to reason, act, and interact with various tools and data sources.
 
-## Course Completed
+## Courses Completed
 
 ### LangChain for LLM Application Development
 **Instructors:** Harrison Chase (Co-Founder and CEO at LangChain) & Andrew Ng (Founder of DeepLearning.AI)  
@@ -11,55 +11,78 @@ This repository documents my journey learning Agentic AI and building intelligen
 
 This course provided hands-on experience with the LangChain framework, covering essential patterns for building robust LLM applications beyond simple API calls.
 
+### Hugging Face AI Agents Course - Unit 1: Introduction to Agents
+**Instructors:** Joffrey Thomas, Ben Burtenshaw, Thomas Simonini & Sergio Paniego (Hugging Face Team)  
+**Platform:** [Hugging Face Learn](https://huggingface.co/learn/agents-course/unit1)  
+**Status:** Unit 1 Completed - Fundamentals Certification Earned
+
+This comprehensive unit established foundational knowledge of AI Agents through both theoretical understanding and hands-on implementation using the smolagents framework.
+
 ## Key Learnings by Lesson
 
-### Lesson 1: Models, Prompts and Output Parsers
+### LangChain Course
+
+#### Lesson 1: Models, Prompts and Output Parsers
 **Core Concepts:** Understanding the foundation of LLM application development
-- **Direct API Integration:** Learned to make direct calls to OpenAI's API and handle responses
-- **LangChain Abstraction:** Discovered how LangChain simplifies model interactions through standardized interfaces
-- **Prompt Templates:** Implemented reusable prompt templates for consistent formatting and variable injection
-- **Output Parsers:** Built structured data extraction from LLM responses, converting unstructured text into JSON objects
-- **Key Takeaway:** LangChain's abstraction layer significantly reduces boilerplate code while maintaining flexibility for complex prompt engineering
+- **Direct API Integration:** Made direct calls to OpenAI's API and handled responses
+- **LangChain Abstraction:** Simplified model interactions through standardized interfaces
+- **Prompt Templates:** Implemented reusable templates for consistent formatting and variable injection
+- **Output Parsers:** Built structured data extraction from LLM responses to JSON objects
+- **Key Takeaway:** LangChain reduces boilerplate code while maintaining flexibility for complex prompt engineering
 
-### Lesson 2: Memory for LLMs
+#### Lesson 2: Memory for LLMs
 **Core Concepts:** Managing conversation state and context limitations
-- **ConversationBufferMemory:** Implemented basic conversation history storage for maintaining context across interactions
-- **ConversationBufferWindowMemory:** Learned to manage memory by keeping only the most recent exchanges to control token usage
-- **ConversationTokenBufferMemory:** Explored token-based memory management for more precise control over context size
-- **ConversationSummaryMemory:** Implemented automatic conversation summarization to maintain context while reducing token consumption
-- **Key Takeaway:** Memory management is crucial for building conversational applications that can maintain coherent, long-running dialogues while respecting token limits
+- **ConversationBufferMemory:** Basic conversation history storage for maintaining context
+- **ConversationBufferWindowMemory:** Managed memory by keeping recent exchanges to control token usage
+- **ConversationTokenBufferMemory:** Token-based memory management for precise context control
+- **ConversationSummaryMemory:** Automatic conversation summarization to maintain context while reducing tokens
+- **Key Takeaway:** Memory management is crucial for coherent, long-running dialogues while respecting token limits
 
-### Lesson 3: Chains
+#### Lesson 3: Chains
 **Core Concepts:** Creating sequences of LLM operations for complex workflows
-- **LLMChain:** Built basic chains that combine prompts with models for single-step operations
-- **SimpleSequentialChain:** Implemented linear workflows where the output of one chain becomes the input of the next
-- **SequentialChain:** Created more complex workflows with multiple inputs and outputs, allowing for branching logic
-- **Router Chain:** Developed intelligent routing systems that can direct inputs to different specialized chains based on content
-- **Key Takeaway:** Chains enable the creation of sophisticated applications by composing simple LLM operations into powerful workflows
+- **LLMChain:** Basic chains combining prompts with models for single-step operations
+- **SimpleSequentialChain:** Linear workflows where output becomes input for the next step
+- **SequentialChain:** Complex workflows with multiple inputs/outputs and branching logic
+- **Router Chain:** Intelligent routing systems directing inputs to specialized chains based on content
+- **Key Takeaway:** Chains enable sophisticated applications by composing simple LLM operations into powerful workflows
 
-### Lesson 4: Question Answering over Documents
+#### Lesson 4: Question Answering over Documents
 **Core Concepts:** Building knowledge-based applications using proprietary data
-- **Document Loading:** Learned to ingest and process various document formats (CSV, text, PDFs)
+- **Document Loading:** Ingested and processed various document formats (CSV, text, PDFs)
 - **Vector Stores:** Implemented document embeddings and similarity search using DocArrayInMemorySearch
-- **Retrieval-Augmented Generation (RAG):** Built systems that combine document retrieval with LLM generation for accurate, contextual answers
-- **RetrievalQA Chains:** Created end-to-end Q&A systems that can query large document collections
-- **Key Takeaway:** RAG patterns enable LLMs to provide accurate, up-to-date answers about specific domains by grounding responses in retrieved documents
+- **Retrieval-Augmented Generation (RAG):** Combined document retrieval with LLM generation for accurate answers
+- **RetrievalQA Chains:** Created end-to-end Q&A systems for querying large document collections
+- **Key Takeaway:** RAG patterns enable accurate, domain-specific answers by grounding responses in retrieved documents
 
-### Lesson 5: Evaluation
+#### Lesson 5: Evaluation
 **Core Concepts:** Measuring and improving LLM application performance
-- **Test Data Generation:** Learned strategies for creating comprehensive test datasets for LLM applications
-- **Manual Evaluation:** Implemented human-in-the-loop evaluation processes for quality assessment
-- **LLM-Assisted Evaluation:** Built systems where LLMs evaluate other LLM outputs, enabling scalable assessment
-- **Automated Testing Pipelines:** Created frameworks for continuous evaluation of application performance
-- **Key Takeaway:** Systematic evaluation is essential for building reliable LLM applications, requiring both automated metrics and human judgment
+- **Test Data Generation:** Created comprehensive test datasets for LLM applications
+- **Manual Evaluation:** Implemented human-in-the-loop evaluation processes
+- **LLM-Assisted Evaluation:** Built systems where LLMs evaluate other LLM outputs for scalable assessment
+- **Automated Testing Pipelines:** Created frameworks for continuous evaluation
+- **Key Takeaway:** Systematic evaluation is essential for reliable LLM applications, requiring both automated metrics and human judgment
 
-### Lesson 6: Agents
+#### Lesson 6: Agents
 **Core Concepts:** Building reasoning systems that can use tools and make decisions
 - **Built-in Tools:** Integrated existing tools like Wikipedia search, mathematical computation, and web search
 - **Custom Tool Creation:** Developed domain-specific tools and integrated them into agent workflows
 - **Agent Types:** Explored different reasoning patterns including zero-shot React agents and conversational agents
-- **Tool Selection Logic:** Implemented systems where agents can intelligently choose which tools to use based on the task
-- **Key Takeaway:** Agents represent the evolution toward more autonomous AI systems that can reason about problems and take actions using available tools
+- **Tool Selection Logic:** Implemented systems for intelligent tool selection based on task requirements
+- **Key Takeaway:** Agents represent evolution toward autonomous AI systems that can reason and take actions using available tools
+
+### Hugging Face AI Agents Course
+
+#### Unit 1: Introduction to Agents
+**Core Concepts:** Foundational understanding of AI Agents and their components
+
+- **Agent Architecture:** Learned that agents consist of an LLM "brain" that interprets instructions, reasons about problems, and decides which tools to use for task completion
+- **LLM Fundamentals:** Understood autoregressive token prediction, special tokens (EOS, chat delimiters), and the transformer architecture's attention mechanism
+- **Chat Templates & Messages:** Implemented proper message formatting using system/user/assistant roles and model-specific special tokens for conversation flow
+- **Think-Act-Observe Cycle:** Mastered the core agent workflow where agents reason about problems, take actions using tools, and observe results to inform next steps
+- **Tool Integration:** Built custom tools using the @tool decorator and integrated external capabilities like timezone lookup and web search
+- **smolagents Framework:** Created functional agents using Hugging Face's smolagents library with proper tool registration and prompt templates
+
+**Key Takeaway:** Agents extend LLM capabilities beyond text generation by combining reasoning, tool usage, and environmental interaction in a structured decision-making loop
 
 ## Technical Skills Acquired
 
@@ -69,6 +92,9 @@ This course provided hands-on experience with the LangChain framework, covering 
 - **Memory Management:** Strategies for maintaining conversation state while optimizing token usage
 - **Tool Integration:** Building and integrating custom tools for specialized agent capabilities
 - **Evaluation Methodologies:** Both automated and human evaluation approaches for LLM applications
+- **smolagents Framework:** Hands-on experience with Hugging Face's agent development toolkit
+- **Chat Templates:** Understanding of message formatting and special tokens across different LLM architectures
+- **Agent Deployment:** Creating and deploying agents as interactive web applications using Gradio
 
 ## Next Steps
 
