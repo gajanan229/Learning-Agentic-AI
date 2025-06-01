@@ -18,6 +18,12 @@ This course provided hands-on experience with the LangChain framework, covering 
 
 This comprehensive unit established foundational knowledge of AI Agents through both theoretical understanding and hands-on implementation using the smolagents framework.
 
+### Hugging Face AI Agents Course - Unit 2.1: The smolagents Framework
+**Platform:** [Hugging Face Learn](https://huggingface.co/learn/agents-course/unit2/smolagents/introduction)  
+**Status:** Unit 2.1 Completed
+
+This unit provided deep hands-on experience with the smolagents framework, exploring advanced agent architectures and capabilities through practical implementation of complex multi-step workflows.
+
 ## Key Learnings by Lesson
 
 ### LangChain Course
@@ -83,6 +89,17 @@ This comprehensive unit established foundational knowledge of AI Agents through 
 - **smolagents Framework:** Created functional agents using Hugging Face's smolagents library with proper tool registration and prompt templates
 
 **Key Takeaway:** Agents extend LLM capabilities beyond text generation by combining reasoning, tool usage, and environmental interaction in a structured decision-making loop
+
+#### Unit 2.1: The smolagents Framework
+**Core Concepts:** Advanced agent architectures and production-ready implementations
+
+- **CodeAgents vs ToolCallingAgents:** Mastered both code-generating agents that write Python snippets and JSON-based tool calling patterns for different use cases
+- **Advanced Tool Development:** Built sophisticated tools with proper type hints, error handling, and documentation for complex workflows
+- **Multi-Agent Systems:** Orchestrated multiple specialized agents to solve complex tasks like Batman filming location analysis with cargo plane calculations
+- **Vision Agents:** Integrated Vision-Language Models for image processing, character identification, and multimodal reasoning tasks
+- **Production Patterns:** Implemented robust error handling, fallback mechanisms, and scalable agent architectures for real-world deployment
+
+**Key Takeaway:** smolagents enables sophisticated agent workflows through modular design, supporting both code execution and tool calling paradigms for complex problem-solving
 
 ## Technical Skills Acquired
 
