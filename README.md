@@ -24,6 +24,12 @@ This comprehensive unit established foundational knowledge of AI Agents through 
 
 This unit provided deep hands-on experience with the smolagents framework, exploring advanced agent architectures and capabilities through practical implementation of complex multi-step workflows.
 
+### Hugging Face AI Agents Course - Unit 2.3: The LangGraph Framework
+**Platform:** [Hugging Face Learn](https://huggingface.co/learn/agents-course/unit2/langgraph/introduction)  
+**Status:** Unit 2.3 Completed
+
+This unit introduced LangGraph as a production-ready framework for building complex, stateful agent workflows using graph-based architectures with precise control over agent execution flow.
+
 ## Key Learnings by Lesson
 
 ### LangChain Course
@@ -100,6 +106,16 @@ This unit provided deep hands-on experience with the smolagents framework, explo
 - **Production Patterns:** Implemented robust error handling, fallback mechanisms, and scalable agent architectures for real-world deployment
 
 **Key Takeaway:** smolagents enables sophisticated agent workflows through modular design, supporting both code execution and tool calling paradigms for complex problem-solving
+
+#### Unit 2.3: The LangGraph Framework
+**Core Concepts:** Production-ready agent workflows with graph-based state management
+
+- **Graph Architecture:** Mastered StateGraph fundamentals where nodes are Python functions performing work and edges control workflow direction with conditional branching
+- **State Management:** Implemented centralized state objects that persist across nodes, enabling complex workflows like email processing with spam detection and response generation
+- **Workflow Control:** Built sophisticated agent loops with conditional edges, enabling dynamic routing based on state conditions and supporting both linear and cyclic execution patterns
+- **Vision Integration:** Developed multimodal agents combining document analysis, OCR text extraction, and LLM reasoning for comprehensive document processing workflows
+
+**Key Takeaway:** LangGraph provides precise control over agent execution through graph-based workflows, enabling production-ready applications with complex state management and conditional logic
 
 ## Technical Skills Acquired
 
