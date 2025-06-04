@@ -11,24 +11,12 @@ This repository documents my journey learning Agentic AI and building intelligen
 
 This course provided hands-on experience with the LangChain framework, covering essential patterns for building robust LLM applications beyond simple API calls.
 
-### Hugging Face AI Agents Course - Unit 1: Introduction to Agents
+### Hugging Face AI Agents Course
 **Instructors:** Joffrey Thomas, Ben Burtenshaw, Thomas Simonini & Sergio Paniego (Hugging Face Team)  
 **Platform:** [Hugging Face Learn](https://huggingface.co/learn/agents-course/unit1)  
-**Status:** Unit 1 Completed - Fundamentals Certification Earned
+**Status:** Units 1, 2.1, 2.3, and 3 Completed (Course Paused)
 
-This comprehensive unit established foundational knowledge of AI Agents through both theoretical understanding and hands-on implementation using the smolagents framework.
-
-### Hugging Face AI Agents Course - Unit 2.1: The smolagents Framework
-**Platform:** [Hugging Face Learn](https://huggingface.co/learn/agents-course/unit2/smolagents/introduction)  
-**Status:** Unit 2.1 Completed
-
-This unit provided deep hands-on experience with the smolagents framework, exploring advanced agent architectures and capabilities through practical implementation of complex multi-step workflows.
-
-### Hugging Face AI Agents Course - Unit 2.3: The LangGraph Framework
-**Platform:** [Hugging Face Learn](https://huggingface.co/learn/agents-course/unit2/langgraph/introduction)  
-**Status:** Unit 2.3 Completed
-
-This unit introduced LangGraph as a production-ready framework for building complex, stateful agent workflows using graph-based architectures with precise control over agent execution flow.
+This comprehensive course provided hands-on experience with multiple AI agent frameworks and real-world implementations. Covered foundational agent concepts, advanced frameworks (smolagents, LangGraph), and practical Agentic RAG applications through the creation of Alfred, a sophisticated gala host agent.
 
 ## Key Learnings by Lesson
 
@@ -117,6 +105,15 @@ This unit introduced LangGraph as a production-ready framework for building comp
 
 **Key Takeaway:** LangGraph provides precise control over agent execution through graph-based workflows, enabling production-ready applications with complex state management and conditional logic
 
+#### Unit 3: Use Case for Agentic RAG
+**Core Concepts:** Real-world implementation of intelligent knowledge retrieval systems
+
+- **Custom RAG Tools:** Built specialized retrieval tools using BM25Retriever for guest information lookup with Document objects and metadata management
+- **Agentic Decision Making:** Implemented agents that intelligently choose when to use RAG vs other tools (web search, weather APIs) based on query context
+- **Real-World Use Case:** Created Alfred, a sophisticated gala host agent managing guest relations, weather monitoring, and event coordination through multiple integrated tools
+
+**Key Takeaway:** Agentic RAG enables intelligent knowledge systems where agents autonomously decide how to retrieve and combine information from multiple sources for complex real-world scenarios
+
 ## Technical Skills Acquired
 
 - **LangChain Framework:** Comprehensive understanding of components, chains, and agent patterns
@@ -127,7 +124,14 @@ This unit introduced LangGraph as a production-ready framework for building comp
 - **Evaluation Methodologies:** Both automated and human evaluation approaches for LLM applications
 - **smolagents Framework:** Hands-on experience with Hugging Face's agent development toolkit
 - **Chat Templates:** Understanding of message formatting and special tokens across different LLM architectures
-- **Agent Deployment:** Creating and deploying agents as interactive web applications using Gradio
+
+## Next in Learning Path
+
+### Introduction to LangGraph - LangChain Academy
+**Platform:** [LangChain Academy](https://academy.langchain.com/courses/intro-to-langgraph)  
+**Status:** Enrolled - Starting Soon
+
+This comprehensive 6-module course provides deep dive training into LangGraph fundamentals, covering state management, human-in-the-loop patterns, long-term memory, and production deployment strategies.
 
 ## Next Steps
 
@@ -135,4 +139,3 @@ This repository will continue to grow as I explore additional courses and framew
 - Advanced agent architectures and multi-agent systems
 - Integration with other AI frameworks and tools
 - Real-world application development and deployment
-- Performance optimization and scaling strategies
