@@ -81,14 +81,18 @@ This comprehensive course provided hands-on experience with multiple AI agent fr
 
 ### Introduction to LangGraph - LangChain Academy
 **Platform:** [LangChain Academy](https://academy.langchain.com/courses/intro-to-langgraph)  
-**Status:** In Progress - Module 1 Started
+**Status:** In Progress - Module 1 Completed, Module 2 Started
 
 This comprehensive 6-module course provides deep dive training into LangGraph fundamentals, covering state management, human-in-the-loop patterns, long-term memory, and production deployment strategies.
 
-#### Module 1 Progress:
+#### Module 1 Completed:
 - **Simple Graph:** Built basic LangGraph with nodes, edges, and conditional routing using TypedDict state
 - **Chain:** Implemented chat model integration with message state, tool binding, and tool execution workflows  
 - **Router:** Created intelligent routing between direct responses and tool calls using conditional edges and ToolNode
+
+#### Module 2 Progress:
+- **State Schema:** Mastered multiple state definition approaches including TypedDict, Dataclasses, and Pydantic models for structured data validation
+- **State Reducers:** Implemented reducer functions to handle concurrent state updates and branching workflows using Annotated types and operator functions
 
 ## Next Steps
 
