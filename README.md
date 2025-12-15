@@ -18,6 +18,12 @@ This course provided hands-on experience with the LangChain framework, covering 
 
 This comprehensive course provided hands-on experience with multiple AI agent frameworks and real-world implementations. Covered foundational agent concepts, advanced frameworks (smolagents, LangGraph), and practical Agentic RAG applications through the creation of Alfred, a sophisticated gala host agent.
 
+### LangGraph Essentials
+**Platform:** DeepLearning.AI  
+**Status:** Completed
+
+A concise refresher course covering core LangGraph concepts. Taken to reinforce fundamentals before continuing with the more advanced LangChain Academy course.
+
 ## Key Learnings by Lesson
 
 ### LangChain for LLM Application Development
@@ -69,6 +75,31 @@ This comprehensive course provided hands-on experience with multiple AI agent fr
 - **Real-World Application:** Created Alfred, a gala host agent with multi-tool integration
 - **Key Takeaway:** Agentic RAG enables autonomous information retrieval from multiple sources
 
+### LangGraph Essentials
+
+#### Lesson 1: States & Nodes
+- **Graph Structure:** Defined shared state using TypedDict and created node functions
+- **Key Takeaway:** Nodes are functions that transform state within a graph workflow
+
+#### Lesson 2: Parallel Execution
+- **Concurrent Nodes:** Implemented parallel execution with multiple outgoing edges
+- **State Reducers:** Used operator.add to accumulate results from parallel branches
+- **Key Takeaway:** LangGraph handles parallel execution automatically when nodes have multiple edges
+
+#### Lesson 3-4: Conditional Edges & Memory
+- **Dynamic Routing:** Built conditional edges using Command objects and routing functions
+- **State Persistence:** Implemented memory with checkpointers for state management
+- **Key Takeaway:** Conditional logic enables intelligent workflow branching based on state
+
+#### Lesson 5: Human-in-the-Loop
+- **Interrupt Function:** Paused execution for human approval using interrupt()
+- **Checkpointing:** Saved state between pauses to resume workflows
+- **Key Takeaway:** Interrupts enable human oversight for critical decision points
+
+#### Lesson 6: Email Workflow Agent
+- **Integrated Workflow:** Built a complete email processing agent combining all concepts
+- **Key Takeaway:** LangGraph components compose into production-ready applications
+
 ## Technical Skills Acquired
 
 - **Agent Frameworks:** LangChain, smolagents, and LangGraph for building AI agents
@@ -81,7 +112,7 @@ This comprehensive course provided hands-on experience with multiple AI agent fr
 
 ### Introduction to LangGraph - LangChain Academy
 **Platform:** [LangChain Academy](https://academy.langchain.com/courses/intro-to-langgraph)  
-**Status:** In Progress - Module 1 Completed, Module 2 Started
+**Status:** Resuming - Module 1 & 2 Completed, Module 3 Next
 
 This comprehensive 6-module course provides deep dive training into LangGraph fundamentals, covering state management, human-in-the-loop patterns, long-term memory, and production deployment strategies.
 
@@ -90,7 +121,7 @@ This comprehensive 6-module course provides deep dive training into LangGraph fu
 - **Chain:** Implemented chat model integration with message state, tool binding, and tool execution workflows  
 - **Router:** Created intelligent routing between direct responses and tool calls using conditional edges and ToolNode
 
-#### Module 2 Progress:
+#### Module 2 Completed:
 - **State Schema:** Mastered multiple state definition approaches including TypedDict, Dataclasses, and Pydantic models for structured data validation
 - **State Reducers:** Implemented reducer functions to handle concurrent state updates and branching workflows using Annotated types and operator functions
 
