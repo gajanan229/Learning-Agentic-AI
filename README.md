@@ -112,7 +112,7 @@ A concise refresher course covering core LangGraph concepts. Taken to reinforce 
 
 ### Introduction to LangGraph - LangChain Academy
 **Platform:** [LangChain Academy](https://academy.langchain.com/courses/intro-to-langgraph)  
-**Status:** Resuming - Module 1 & 2 Completed, Module 3 Next
+**Status:** In Progress - Modules 1-3 Completed, Module 4 Next
 
 This comprehensive 6-module course provides deep dive training into LangGraph fundamentals, covering state management, human-in-the-loop patterns, long-term memory, and production deployment strategies.
 
@@ -124,6 +124,13 @@ This comprehensive 6-module course provides deep dive training into LangGraph fu
 #### Module 2 Completed:
 - **State Schema:** Mastered multiple state definition approaches including TypedDict, Dataclasses, and Pydantic models for structured data validation
 - **State Reducers:** Implemented reducer functions to handle concurrent state updates and branching workflows using Annotated types and operator functions
+
+#### Module 3 Completed:
+- **Streaming:** Implemented multiple streaming modes to visualize graph output and chat model tokens during execution
+- **Breakpoints:** Used interrupt_before and interrupt_after to pause execution for human approval workflows
+- **State Editing:** Modified graph state and injected human feedback during interrupted execution
+- **Dynamic Breakpoints:** Implemented conditional interrupts using NodeInterrupt based on runtime logic
+- **Time Travel:** Replayed and forked from past states for debugging and alternative execution paths
 
 ## Next Steps
 
