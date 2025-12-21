@@ -112,7 +112,7 @@ A concise refresher course covering core LangGraph concepts. Taken to reinforce 
 
 ### Introduction to LangGraph - LangChain Academy
 **Platform:** [LangChain Academy](https://academy.langchain.com/courses/intro-to-langgraph)  
-**Status:** In Progress - Modules 1-3 Completed, Module 4 Next
+**Status:** In Progress - Modules 1-4 Completed, Module 5 Next
 
 This comprehensive 6-module course provides deep dive training into LangGraph fundamentals, covering state management, human-in-the-loop patterns, long-term memory, and production deployment strategies.
 
@@ -131,6 +131,12 @@ This comprehensive 6-module course provides deep dive training into LangGraph fu
 - **State Editing:** Modified graph state and injected human feedback during interrupted execution
 - **Dynamic Breakpoints:** Implemented conditional interrupts using NodeInterrupt based on runtime logic
 - **Time Travel:** Replayed and forked from past states for debugging and alternative execution paths
+
+#### Module 4 Completed:
+- **Parallelization:** Implemented fan-out and fan-in patterns for concurrent node execution with state reducers
+- **Sub-graphs:** Created modular multi-agent systems with separate state spaces communicating through overlapping keys
+- **Map-Reduce:** Built workflows that distribute tasks across parallel nodes and aggregate results
+- **Research Assistant:** Developed a complete multi-agent research system with planning, multi-turn interviews, and report generation
 
 ## Next Steps
 
