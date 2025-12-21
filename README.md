@@ -24,6 +24,12 @@ This comprehensive course provided hands-on experience with multiple AI agent fr
 
 A concise refresher course covering core LangGraph concepts. Taken to reinforce fundamentals before continuing with the more advanced LangChain Academy course.
 
+### Introduction to LangGraph - LangChain Academy
+**Platform:** [LangChain Academy](https://academy.langchain.com/courses/intro-to-langgraph)  
+**Status:** Completed
+
+A comprehensive 6-module course providing deep dive training into LangGraph fundamentals, covering state management, human-in-the-loop patterns, long-term memory, and production deployment strategies.
+
 ## Key Learnings by Lesson
 
 ### LangChain for LLM Application Development
@@ -100,6 +106,48 @@ A concise refresher course covering core LangGraph concepts. Taken to reinforce 
 - **Integrated Workflow:** Built a complete email processing agent combining all concepts
 - **Key Takeaway:** LangGraph components compose into production-ready applications
 
+### Introduction to LangGraph - LangChain Academy
+
+#### Module 1: Simple Graph, Chain & Router
+- **Simple Graph:** Built basic LangGraph with nodes, edges, and conditional routing using TypedDict state
+- **Chain:** Implemented chat model integration with message state, tool binding, and tool execution workflows
+- **Router:** Created intelligent routing between direct responses and tool calls using conditional edges and ToolNode
+- **Key Takeaway:** LangGraph provides foundational building blocks for workflow orchestration
+
+#### Module 2: State Management
+- **State Schema:** Mastered multiple state definition approaches including TypedDict, Dataclasses, and Pydantic models for structured data validation
+- **State Reducers:** Implemented reducer functions to handle concurrent state updates and branching workflows using Annotated types and operator functions
+- **Key Takeaway:** Flexible state management enables complex data flow patterns
+
+#### Module 3: Human-in-the-Loop
+- **Streaming:** Implemented multiple streaming modes to visualize graph output and chat model tokens during execution
+- **Breakpoints:** Used interrupt_before and interrupt_after to pause execution for human approval workflows
+- **State Editing:** Modified graph state and injected human feedback during interrupted execution
+- **Dynamic Breakpoints:** Implemented conditional interrupts using NodeInterrupt based on runtime logic
+- **Time Travel:** Replayed and forked from past states for debugging and alternative execution paths
+- **Key Takeaway:** Human-in-the-loop patterns enable oversight and intervention in agent workflows
+
+#### Module 4: Multi-Agent Workflows
+- **Parallelization:** Implemented fan-out and fan-in patterns for concurrent node execution with state reducers
+- **Sub-graphs:** Created modular multi-agent systems with separate state spaces communicating through overlapping keys
+- **Map-Reduce:** Built workflows that distribute tasks across parallel nodes and aggregate results
+- **Research Assistant:** Developed a complete multi-agent research system with planning, multi-turn interviews, and report generation
+- **Key Takeaway:** Multi-agent architectures enable complex problem decomposition and parallel processing
+
+#### Module 5: Long-Term Memory
+- **Memory Store:** Introduced LangGraph Memory Store for saving and retrieving long-term memories across threads
+- **Profile Schema:** Saved semantic memories to a structured user profile using Trustcall for schema updates
+- **Collection Schema:** Saved memories to collections instead of single profiles for managing multiple items
+- **Memory Agent:** Built task_mAIstro, an agent with long-term memory managing ToDo lists with both semantic and procedural memory
+- **Key Takeaway:** Long-term memory enables personalized and context-aware agent interactions
+
+#### Module 6: Production Deployment
+- **Creating Deployment:** Used LangGraph CLI to build Docker images and create self-hosted deployments
+- **Connecting to Deployment:** Interacted with deployed agents using LangGraph API endpoints for Runs, Threads, and Store
+- **Assistants:** Created and versioned assistants for experimentation and different use cases
+- **Double Texting:** Handled concurrent user messages gracefully using rejection and enqueuing strategies
+- **Key Takeaway:** LangGraph Platform provides production-ready deployment and management capabilities
+
 ## Technical Skills Acquired
 
 - **Agent Frameworks:** LangChain, smolagents, and LangGraph for building AI agents
@@ -107,36 +155,8 @@ A concise refresher course covering core LangGraph concepts. Taken to reinforce 
 - **Prompt Engineering:** Advanced templating, memory management, and output parsing
 - **Tool Integration:** Custom tool development and multi-tool orchestration
 - **Evaluation:** Automated and human evaluation methodologies for LLM applications
-
-## Next in Learning Path
-
-### Introduction to LangGraph - LangChain Academy
-**Platform:** [LangChain Academy](https://academy.langchain.com/courses/intro-to-langgraph)  
-**Status:** In Progress - Modules 1-4 Completed, Module 5 Next
-
-This comprehensive 6-module course provides deep dive training into LangGraph fundamentals, covering state management, human-in-the-loop patterns, long-term memory, and production deployment strategies.
-
-#### Module 1 Completed:
-- **Simple Graph:** Built basic LangGraph with nodes, edges, and conditional routing using TypedDict state
-- **Chain:** Implemented chat model integration with message state, tool binding, and tool execution workflows  
-- **Router:** Created intelligent routing between direct responses and tool calls using conditional edges and ToolNode
-
-#### Module 2 Completed:
-- **State Schema:** Mastered multiple state definition approaches including TypedDict, Dataclasses, and Pydantic models for structured data validation
-- **State Reducers:** Implemented reducer functions to handle concurrent state updates and branching workflows using Annotated types and operator functions
-
-#### Module 3 Completed:
-- **Streaming:** Implemented multiple streaming modes to visualize graph output and chat model tokens during execution
-- **Breakpoints:** Used interrupt_before and interrupt_after to pause execution for human approval workflows
-- **State Editing:** Modified graph state and injected human feedback during interrupted execution
-- **Dynamic Breakpoints:** Implemented conditional interrupts using NodeInterrupt based on runtime logic
-- **Time Travel:** Replayed and forked from past states for debugging and alternative execution paths
-
-#### Module 4 Completed:
-- **Parallelization:** Implemented fan-out and fan-in patterns for concurrent node execution with state reducers
-- **Sub-graphs:** Created modular multi-agent systems with separate state spaces communicating through overlapping keys
-- **Map-Reduce:** Built workflows that distribute tasks across parallel nodes and aggregate results
-- **Research Assistant:** Developed a complete multi-agent research system with planning, multi-turn interviews, and report generation
+- **Long-Term Memory:** Memory stores, semantic and procedural memory management
+- **Production Deployment:** Docker containerization, API integration, and deployment strategies
 
 ## Next Steps
 
