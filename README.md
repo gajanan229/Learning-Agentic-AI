@@ -30,6 +30,12 @@ A concise refresher course covering core LangGraph concepts. Taken to reinforce 
 
 A comprehensive 6-module course providing deep dive training into LangGraph fundamentals, covering state management, human-in-the-loop patterns, long-term memory, and production deployment strategies.
 
+### LangGraph Deep Agents
+**Platform:** LangChain AI  
+**Status:** Module 0 Completed (Course In Progress)
+
+A hands-on course focused on building deep agents capable of handling complex, long-running tasks. Implements advanced patterns including task planning, context offloading, and context isolation through sub-agent delegation.
+
 ## Key Learnings by Lesson
 
 ### LangChain for LLM Application Development
@@ -148,6 +154,16 @@ A comprehensive 6-module course providing deep dive training into LangGraph fund
 - **Double Texting:** Handled concurrent user messages gracefully using rejection and enqueuing strategies
 - **Key Takeaway:** LangGraph Platform provides production-ready deployment and management capabilities
 
+### LangGraph Deep Agents
+
+#### Module 0: Creating Agents
+- **ReAct Agents:** Implemented Reasoning and Acting framework agents using create_agent abstraction
+- **Tool Integration:** Built agents with calculator tools demonstrating tool calling and execution
+- **State Management:** Extended AgentState with custom fields and reducer functions for state updates
+- **Injected Parameters:** Used InjectedState and InjectedToolCallId to pass state and metadata to tools without LLM awareness
+- **Command Updates:** Leveraged Command objects to update multiple state fields from tool returns
+- **Key Takeaway:** The create_agent abstraction simplifies building production-ready ReAct agents with custom state management
+
 ## Technical Skills Acquired
 
 - **Agent Frameworks:** LangChain, smolagents, and LangGraph for building AI agents
@@ -157,6 +173,13 @@ A comprehensive 6-module course providing deep dive training into LangGraph fund
 - **Evaluation:** Automated and human evaluation methodologies for LLM applications
 - **Long-Term Memory:** Memory stores, semantic and procedural memory management
 - **Production Deployment:** Docker containerization, API integration, and deployment strategies
+
+## Next in Learning Path
+
+### LangGraph Deep Agents - Continuing
+**Next Module:** Module 1 - Task Planning Foundations
+
+Continuing the Deep Agents course to learn task planning with TODO lists, virtual file systems for context offloading, sub-agent delegation, and building a complete research agent.
 
 ## Next Steps
 
