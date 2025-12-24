@@ -32,7 +32,7 @@ A comprehensive 6-module course providing deep dive training into LangGraph fund
 
 ### LangGraph Deep Agents
 **Platform:** LangChain AI  
-**Status:** Module 0 Completed (Course In Progress)
+**Status:** Modules 0-1 Completed (Course In Progress)
 
 A hands-on course focused on building deep agents capable of handling complex, long-running tasks. Implements advanced patterns including task planning, context offloading, and context isolation through sub-agent delegation.
 
@@ -164,6 +164,14 @@ A hands-on course focused on building deep agents capable of handling complex, l
 - **Command Updates:** Leveraged Command objects to update multiple state fields from tool returns
 - **Key Takeaway:** The create_agent abstraction simplifies building production-ready ReAct agents with custom state management
 
+#### Module 1: Task Planning with TODO Lists
+- **DeepAgentState:** Extended state schema with todos list and files dictionary for comprehensive task tracking
+- **TODO Structure:** Implemented structured tasks with content descriptions and status tracking (pending, in_progress, completed)
+- **TODO Tools:** Created write_todos and read_todos tools for managing task lists within agent workflows
+- **Context Rot Prevention:** Utilized continuous TODO list updates to maintain agent focus during long-running tasks with high tool call counts
+- **Task Recitation:** Implemented pattern of rewriting TODO lists to keep objectives at end of context window
+- **Key Takeaway:** Structured TODO lists enable agents to navigate complex multi-step tasks and prevent mission drift
+
 ## Technical Skills Acquired
 
 - **Agent Frameworks:** LangChain, smolagents, and LangGraph for building AI agents
@@ -173,13 +181,14 @@ A hands-on course focused on building deep agents capable of handling complex, l
 - **Evaluation:** Automated and human evaluation methodologies for LLM applications
 - **Long-Term Memory:** Memory stores, semantic and procedural memory management
 - **Production Deployment:** Docker containerization, API integration, and deployment strategies
+- **Task Planning:** TODO list management and structured task tracking for complex workflows
 
 ## Next in Learning Path
 
 ### LangGraph Deep Agents - Continuing
-**Next Module:** Module 1 - Task Planning Foundations
+**Next Module:** Module 2 - Virtual File Systems
 
-Continuing the Deep Agents course to learn task planning with TODO lists, virtual file systems for context offloading, sub-agent delegation, and building a complete research agent.
+Continuing the Deep Agents course to implement virtual file systems for context offloading, sub-agent delegation, and building a complete research agent.
 
 ## Next Steps
 
