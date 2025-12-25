@@ -32,7 +32,7 @@ A comprehensive 6-module course providing deep dive training into LangGraph fund
 
 ### LangGraph Deep Agents
 **Platform:** LangChain AI  
-**Status:** Modules 0-1 Completed (Course In Progress)
+**Status:** Modules 0-4 Completed (Course Completed)
 
 A hands-on course focused on building deep agents capable of handling complex, long-running tasks. Implements advanced patterns including task planning, context offloading, and context isolation through sub-agent delegation.
 
@@ -172,6 +172,27 @@ A hands-on course focused on building deep agents capable of handling complex, l
 - **Task Recitation:** Implemented pattern of rewriting TODO lists to keep objectives at end of context window
 - **Key Takeaway:** Structured TODO lists enable agents to navigate complex multi-step tasks and prevent mission drift
 
+#### Module 2: Virtual File Systems
+- **Context Offloading:** Implemented filesystem operations to manage context window growth during complex tasks with high tool call counts
+- **Virtual Filesystem:** Built dictionary-based mock filesystem within LangGraph state for thread-wise persistence
+- **File Tools:** Created ls, read_file, and write_file tools for storing and retrieving information outside the context window
+- **Strategic Storage:** Enabled agents to write token-heavy content to files and fetch information as needed rather than maintaining all data in context
+- **Key Takeaway:** Context offloading through file systems prevents context accumulation while preserving access to critical information
+
+#### Module 3: Context Isolation with Sub-agents
+- **Sub-agent Delegation:** Implemented specialized sub-agents with isolated context windows to prevent context clashes and confusion
+- **Sub-agent Registry:** Created registry system mapping subagent types to configured agents with specific tool sets and prompts
+- **Task Tool:** Built delegation mechanism enabling parent agent to assign work to specialized sub-agents through task tool calls
+- **Clean Separation:** Maintained isolation where sub-agents operate independently and return results to parent as ToolMessages
+- **Key Takeaway:** Context isolation through sub-agent delegation enables focused task execution and prevents context pollution
+
+#### Module 4: Complete Research Agent
+- **Integration:** Combined TODO lists, file systems, and sub-agents into a fully functional deep research agent
+- **Search Tool:** Implemented Tavily search with content offloading where full webpage content is saved to files and only summaries returned to agent
+- **Content Processing:** Built pipeline for fetching webpage content, converting HTML to markdown, and generating structured summaries
+- **Think Tool:** Created strategic reflection mechanism for agents to analyze findings and plan next research steps
+- **Key Takeaway:** Deep agents combine task planning, context offloading, and context isolation to handle complex long-running research tasks
+
 ## Technical Skills Acquired
 
 - **Agent Frameworks:** LangChain, smolagents, and LangGraph for building AI agents
@@ -182,13 +203,8 @@ A hands-on course focused on building deep agents capable of handling complex, l
 - **Long-Term Memory:** Memory stores, semantic and procedural memory management
 - **Production Deployment:** Docker containerization, API integration, and deployment strategies
 - **Task Planning:** TODO list management and structured task tracking for complex workflows
-
-## Next in Learning Path
-
-### LangGraph Deep Agents - Continuing
-**Next Module:** Module 2 - Virtual File Systems
-
-Continuing the Deep Agents course to implement virtual file systems for context offloading, sub-agent delegation, and building a complete research agent.
+- **Context Management:** Context offloading through virtual file systems and context isolation through sub-agent delegation
+- **Deep Agents:** Building production-ready agents capable of handling complex long-running tasks with advanced context engineering patterns
 
 ## Next Steps
 
