@@ -36,6 +36,12 @@ A comprehensive 6-module course providing deep dive training into LangGraph fund
 
 A hands-on course focused on building deep agents capable of handling complex, long-running tasks. Implements advanced patterns including task planning, context offloading, and context isolation through sub-agent delegation.
 
+### Deep Research
+**Platform:** LangChain AI  
+**Status:** Module 1 Completed (Course In Progress)
+
+A comprehensive course on building production-ready deep research systems from scratch. Covers multi-phase research workflows including scoping, research execution, and report generation using advanced agent patterns and external tool integration.
+
 ## Key Learnings by Lesson
 
 ### LangChain for LLM Application Development
@@ -193,6 +199,16 @@ A hands-on course focused on building deep agents capable of handling complex, l
 - **Think Tool:** Created strategic reflection mechanism for agents to analyze findings and plan next research steps
 - **Key Takeaway:** Deep agents combine task planning, context offloading, and context isolation to handle complex long-running research tasks
 
+### Deep Research
+
+#### Module 1: User Clarification and Brief Generation
+- **User Clarification:** Implemented structured workflow to determine if additional context is needed from users before starting research
+- **Brief Generation:** Transformed conversational user inputs into detailed research questions using Pydantic schemas
+- **Structured Output:** Used ClarifyWithUser and ResearchQuestion schemas to prevent hallucination and ensure reliable decision making
+- **LangGraph Commands:** Leveraged Command system for flow control and state updates across workflow phases
+- **Conditional Routing:** Built two-step workflow with clarification phase followed by brief generation based on clarification needs
+- **Key Takeaway:** Proper scoping through user clarification and structured brief generation ensures research addresses actual user intent
+
 ## Technical Skills Acquired
 
 - **Agent Frameworks:** LangChain, smolagents, and LangGraph for building AI agents
@@ -205,6 +221,15 @@ A hands-on course focused on building deep agents capable of handling complex, l
 - **Task Planning:** TODO list management and structured task tracking for complex workflows
 - **Context Management:** Context offloading through virtual file systems and context isolation through sub-agent delegation
 - **Deep Agents:** Building production-ready agents capable of handling complex long-running tasks with advanced context engineering patterns
+- **Research Systems:** Structured research workflows with scoping, clarification, and brief generation
+- **Structured Output:** Pydantic schemas for reliable AI decision making and preventing hallucination
+
+## Next in Learning Path
+
+### Deep Research - Continuing
+**Next Module:** Module 2 - Research Agent with Custom Tools
+
+Continuing the Deep Research course to build iterative research agents with external search integration, MCP protocol tools, multi-agent coordination, and end-to-end research workflows.
 
 ## Next Steps
 
