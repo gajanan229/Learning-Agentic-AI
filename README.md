@@ -38,7 +38,7 @@ A hands-on course focused on building deep agents capable of handling complex, l
 
 ### Deep Research
 **Platform:** LangChain AI  
-**Status:** Module 1 Completed (Course In Progress)
+**Status:** Modules 1-5 Completed (Course Completed)
 
 A comprehensive course on building production-ready deep research systems from scratch. Covers multi-phase research workflows including scoping, research execution, and report generation using advanced agent patterns and external tool integration.
 
@@ -209,6 +209,38 @@ A comprehensive course on building production-ready deep research systems from s
 - **Conditional Routing:** Built two-step workflow with clarification phase followed by brief generation based on clarification needs
 - **Key Takeaway:** Proper scoping through user clarification and structured brief generation ensures research addresses actual user intent
 
+#### Module 2: Research Agent with Custom Tools
+- **Agent Architecture:** Built iterative research agent using LLM decision node and tool execution node pattern
+- **Sequential Tool Execution:** Implemented synchronous tool execution for reliability and simplicity
+- **Search Integration:** Integrated Tavily search with content summarization to compress search results efficiently
+- **Research Loop:** Created ReAct-style agent loop with conditional routing based on LLM decisions
+- **Prompt Engineering:** Applied concrete heuristics including hard limits on tool calls and thinking tools to prevent excessive searching
+- **Key Takeaway:** Research agents use flexible strategies guided by intermediate results to handle open-ended research tasks
+
+#### Module 3: Research Agent with MCP
+- **Model Context Protocol:** Integrated MCP servers as standardized tool access mechanism for research agents
+- **MCP Architecture:** Implemented client-server communication using LangChain MCP Adapters for seamless integration
+- **Filesystem Server:** Used Filesystem MCP Server providing file operations, directory management, and search capabilities
+- **Async Tool Execution:** Implemented async-only operation required by MCP protocol for non-blocking concurrent operations
+- **Protocol-Based Tools:** Leveraged MultiServerMCPClient for configuration-driven server setup and management
+- **Key Takeaway:** MCP provides standardized protocol for AI tool access enabling integration of diverse tool ecosystems
+
+#### Module 4: Research Supervisor
+- **Supervisor Pattern:** Implemented coordination agent with worker agents for complex multi-topic research tasks
+- **Parallel Research:** Built concurrent research execution using parallel tool calls to delegate independent sub-topics to sub-agents
+- **Context Isolation:** Created separate context windows for different research topics to prevent context clash and confusion
+- **Delegation Tools:** Developed structured tools (ConductResearch, ResearchComplete) for task assignment and completion
+- **Scaling Rules:** Applied heuristics for determining when to use single agent versus multiple sub-agents based on request complexity
+- **Key Takeaway:** Multi-agent coordination with context isolation enables handling complex research requests with multiple independent sub-topics
+
+#### Module 5: Full Multi-Agent Research System
+- **Three-Phase Architecture:** Integrated complete workflow combining scoping, multi-agent research, and report generation
+- **System Integration:** Composed all previous components into end-to-end research system from user input to final report
+- **State Management:** Implemented complex state flow across subgraphs with proper transitions between phases
+- **Report Generation:** Added final synthesis phase to produce comprehensive research reports from aggregated findings
+- **Thread Management:** Enabled conversation-based clarification with proper thread handling across workflow phases
+- **Key Takeaway:** Complete research systems integrate scoping, coordinated execution, and synthesis to deliver production-ready deep research capabilities
+
 ## Technical Skills Acquired
 
 - **Agent Frameworks:** LangChain, smolagents, and LangGraph for building AI agents
@@ -223,13 +255,8 @@ A comprehensive course on building production-ready deep research systems from s
 - **Deep Agents:** Building production-ready agents capable of handling complex long-running tasks with advanced context engineering patterns
 - **Research Systems:** Structured research workflows with scoping, clarification, and brief generation
 - **Structured Output:** Pydantic schemas for reliable AI decision making and preventing hallucination
-
-## Next in Learning Path
-
-### Deep Research - Continuing
-**Next Module:** Module 2 - Research Agent with Custom Tools
-
-Continuing the Deep Research course to build iterative research agents with external search integration, MCP protocol tools, multi-agent coordination, and end-to-end research workflows.
+- **Multi-Agent Coordination:** Supervisor patterns and parallel research execution for complex multi-topic tasks
+- **Protocol Integration:** Model Context Protocol (MCP) servers for standardized tool access and ecosystem integration
 
 ## Next Steps
 
